@@ -29,7 +29,7 @@ patron=re.compile('^([A-Z]{1}[0-9]{3}[a-z]+[\W]{3})$')
 
 validarexp=Validar()
 ventana=tk.Tk()
-ventana.title("validador de expresiones Regulares")
+ventana.title("Validador de expresiones Regulares")
 ventana.geometry('700x600')
 ventana.iconbitmap("img\icono.ico") #esta es la ruta del icono
 ventana.configure(background='gray25')
@@ -45,13 +45,13 @@ label.pack(pady=20)
 var=tk.StringVar()
 
 #entrada
-e1=tk.Label(ventana,text= "Por favor ingresa la expresión a validar :", font=('Comic Sans MS',18),bg='dodger blue',fg='white')
+e1=tk.Label(ventana,text= "Por favor ingresa la contraseña a validar :", font=('Comic Sans MS',18),bg='dodger blue',fg='white')
 e1.pack(padx=50,pady=10, ipadx=10, ipady=10, fill=tk.X) #distribucion a lo ancho de las X
 entrada1=tk.Entry(ventana)
 entrada1.pack(fill=tk.X,padx=140,pady=10, ipadx=10, ipady=10)
 
 #operación
-operacion=tk.Button(ventana,text='Operar',fg='white',background='lime green',command=validarexp.operar)
+operacion=tk.Button(ventana,text='Validar',fg='white',background='lime green',command=validarexp.operar)
 operacion.pack(fill=tk.X,padx=200,pady=10, ipadx=5, ipady=10)
 
 #Cajón de resultado
